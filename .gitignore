@@ -1,1 +1,33 @@
-terraform.tfvars
+# Local .terraform directory (downloaded providers/modules — huge, never commit)
+.terraform/
+.terraform.lock.hcl can optionally be committed (see note below)
+
+# Terraform state files — contain sensitive data, managed by Terraform Cloud instead
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Your personal variable values (may contain secrets/account IDs)
+*.tfvars
+*.tfvars.json
+
+# Override files (local developer overrides, not for sharing)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Generated Lambda zip (rebuilt automatically by Terraform)
+modules/lambda_counter/counter.zip
+
+# CLI config (contains your Terraform Cloud token)
+.terraformrc
+terraform.rc
+
+# OS junk
+.DS_Store
+Thumbs.db
