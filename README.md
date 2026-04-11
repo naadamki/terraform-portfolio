@@ -2,7 +2,10 @@
 
 A fully serverless portfolio site deployed on AWS using Terraform.
 
+
 ## Architecture
+![Architecture Diagram](./diagram.svg)
+
 S3 → CloudFront → (static site)
 
 API Gateway → Lambda → DynamoDB → (visitor counter)
