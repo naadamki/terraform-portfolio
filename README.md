@@ -4,7 +4,7 @@ A fully serverless portfolio site deployed on AWS using Terraform.
 
 
 ## Architecture
-![Architecture Diagram](./diagram.svg)
+![Architecture Diagram](./assets/diagram.svg)
 
 S3 → CloudFront → (static site)
 
