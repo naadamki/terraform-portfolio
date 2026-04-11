@@ -4,6 +4,7 @@ A fully serverless portfolio site deployed on AWS using Terraform.
 
 ## Architecture
 S3 → CloudFront → (static site)
+
 API Gateway → Lambda → DynamoDB → (visitor counter)
 
 ## Live Site
@@ -25,7 +26,12 @@ API Gateway → Lambda → DynamoDB → (visitor counter)
 - Infrastructure destroy/redeploy in < 3 minutes
 
 ## Deploy It Yourself
-# Prerequisites: AWS CLI configured, Terraform CLI installed
-terraform init
-terraform plan
-terraform apply
+> Prerequisites: 
+1. AWS CLI configured
+2. Terraform CLI installed
+
+---
+
+    terraform init
+    terraform plan
+    terraform apply
