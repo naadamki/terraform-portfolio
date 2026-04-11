@@ -7,7 +7,7 @@ S3 → CloudFront → (static site)
 API Gateway → Lambda → DynamoDB → (visitor counter)
 
 ## Live Site
-🔗 https://abc123.cloudfront.net
+🔗 https://d1jbbku57rasp7.cloudfront.net
 
 ## Tech Stack
 - **Terraform** — all infrastructure as code
