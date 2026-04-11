@@ -1,6 +1,7 @@
 # S3 bucket — private, CloudFront serves it
 resource "aws_s3_bucket" "site" {
   bucket = "${var.project_name}-site-${random_id.suffix.hex}"
+  force_destroy = true
 
   tags = {
     Project     = var.project_name
